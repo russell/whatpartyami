@@ -1,0 +1,13 @@
+<div class="hero-unit">
+<h1>Questions</h1><br/>
+	<div ng-repeat="topic in topics" class="questions">
+		<div ng-bind-html-unsafe="topic.question"></div>
+		   <div class="btn-group" required>
+		        <button type="button" class="btn btn-success btn-primary" ng-model="topic.answer" btn-radio="true">Agree</button>
+		        <button type="button" class="btn btn-primary" ng-model="topic.answer" btn-radio="''">Don't Care</button>
+		        <button type="button" class="btn btn-danger btn-primary" ng-model="topic.answer" btn-radio="false">Disagree</button>
+    		</div>
+    </div>
+    <br/>
+	<button type="button" class="btn btn-large" ng-click="submit()">Submit</button>
+</div>

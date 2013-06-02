@@ -1,0 +1,22 @@
+<div class="hero-unit">
+	<h2>Which parties are most aligned with your values.</h2>
+	<table class="table">
+		<thead>
+			<tr>
+				<th>Percent</th>
+				<th>Color</th>
+				<th>Party</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr ng-repeat="v in view" class="{{$first && 'success' || ''}}">
+				<td class="big-pct">{{v.pct *100 | number:0}}%</td>
+				<td><div class="color-sqr" style="background-color:{{v.color}};"></div></td>
+				<td>{{v.name}}</td>
+			</tr>		
+		</tbody>
+	</table>
+
+	<hr>
+   <chart data="chartData"></chart>
+</div>

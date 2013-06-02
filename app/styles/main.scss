@@ -1,0 +1,49 @@
+@import "compass_twitter_bootstrap";
+
+.color-sqr {   
+    float: left;
+    width: 25px;
+    height: 25px;
+    margin: 0px 5px 5px 5px;
+    border-width: 1px;
+    border-style: solid;
+    border-color: rgba(0,0,0,.2);
+}
+
+.big-pct {
+	font-size: 40px;
+}
+
+.foo {
+	vertical-align: middle;
+}
+
+
+.home-page {
+	background-image:url('../images/bg.jpg');
+	background-repeat:no-repeat;
+	background-position:center;
+	height: 400px;
+}
+
+.home-title {
+	margin-top: -25px;
+	color: rgb(78, 78, 78);
+}
+
+.home-text {
+	margin-top: 60px;
+color: #EB9100;
+background: rgba(54,25,25, .3);
+border-radius: 6px;
+padding: 10px;
+
+}
+
+.home-page button {
+	margin-top: 40px;
+}
+
+.questions {
+	margin-top: 15px;	
+}
